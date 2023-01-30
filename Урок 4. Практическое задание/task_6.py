@@ -13,16 +13,18 @@
 при котором повторение элементов списка будет прекращено.
 """
 from itertools import count
+
 for el in count(3):
-if el > 10:
-break
+    if el > 10:
+        break
 else:
-print(el)
+    print(el)
 
 from itertools import cycle
+
 с = 0
 for el in cycle("ABC"):
-if с > 10:
-break
+    if с > 10:
+    break
 print(el)
 с += 1
